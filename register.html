@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Page</title>
+    <link rel="shortcut icon" type="image/png" href="images2/logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    button{
-        display:block;
-        margin: 20px;
-    }
-    input{
-        display: block;
-        margin:20px;
+    body{
+        background-image: url(photos/black.jpg);
+        
     }
 </style>
 <body>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Set Password">
-    <button type="submit">Register</button>
-    <a href ="login.html">Already a user? Go to login page</a>
+    <div class="logo">
+      <a href="index.html">  <img style="width: 150px; height: 75px; border-radius: 20px; margin:10px;" src="photos/logo.jpg" ></a>
+    </div>
+    <div class="loginbox">
+        <img src="images2/2.png" class="login"><br>
+        <h1>Sign Up Here...</h1>
+        <form action="login.html">
+            <p>Email</p>
+            <input type="text" name="" placeholder="abcd@gmail.com">
+            <p>New Password</p>
+            <input type="password" name="" placeholder="***">
+            <p>Confirm Password</p>
+            <input type="password" name="" placeholder="***">            
+            <p>Phone Number</p>
+            <input type="number" name="" placeholder="91+ 94567-23456" max="10">
+
+            <button style="background-color: black; color: white; width: 150px;" type="submit">Sign Up</button>
+        </form>
+    </div>
 </body>
 </html>
